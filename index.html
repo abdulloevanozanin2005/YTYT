@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/tests.css">
+    <link rel="stylesheet" href="css/dropdown-menu.css">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container-fluid bg-img">
+      <div class="d-flex justify-content-center">
+        <nav class="navbar text-center bg-light rounded-pill">
+            <div class="container-fluid">
+              <a class="navbar-brand logo-brand" href="#">
+                <img src="./media/images/Logo.png" alt="Logo" width="65" height="24" class="d-inline-block align-text-top">
+              </a>
+                  <div class="d-flex justify-content-start navigation-bar gap-lg-5">
+                    <a class="nav-link" href="#learn">Чему вы научитесь?</a>
+                    <a class="nav-link" href="#process">Процесс обучения</a>
+                    <a class="nav-link" href="#costs">Стоимость</a>
+                    <a class="nav-link link-contact" href="#our-contacts">Контакты</a>
+                    <a class="nav-link link-registration" href="#">Регистрация</a>
+                  </div>
+                  <div>
+                     <button class="login btn btn-primary btn-lg rounded-pill">&#10140; Войти</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary btn-md rounded-circle">&#10140;</button>
+                 </div>
+                 <div class="open d-lg-none">
+                  <img onclick="myFunction()" class="dropbtn dropdown menu-burger-wth" src="./media/images/menu-burger.png" alt="">
+                 </div>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#learn">Чему вы научитесь?</a>
+                    <a href="#process">Процесс обучения</a>
+                    <a href="#costs">Стоимость</a>
+                    <a href="#our-contacts">Контакты</a>
+                    <a href="#">Регистрация</a>
+                    <button class="login btn btn-primary btn-lg rounded-pill btn-in-menu">&#10140; Войти</button>
+                  </div>
+            </nav>
+        </div>
+              <section class="container">
+                  <div class="questions">
+                    <p class="block-heading">Перед тем, как приступить к обучению, необходимо пройти небольшой тест</в>
+                    <div class="block-text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не знаю».</div>
+                    <div class="d-flex justify-content-center align-self-center"><button class="block1-button">Начать тест</button></div>
+                  </div>
+                  <div class="questions-2">
+                    <div class="alert alerts alert-primary grey-alert">ЗАДАНИЕ №1</div>
+                    <div class="block-text-2">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?</div>
+                    <select name="" id="forSelect">
+                      <option value="1">Answer1</option>
+                      <option value="2">Answer2</option>
+                      <option value="3">Answer3</option>
+                    </select>
+                    <div>
+                      <button class="block2-button">Ответить</button>
+                    </div>
+                  </div>
+
+                  <div class="option-1">
+                    <div class="alert alerts alert-primary grey-alert">ЗАДАНИЕ №1</div>
+                    <h1 class="block-heading">Правильно! С логикой у вас все отлично</h1>
+                    <div class="block-text-2">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                      В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</div>
+                    <button class="block2-button">Завершить тест</button>
+                  </div>
+
+                  <div class="option-2">
+                    <div class="alert alerts alert-primary grey-alert">ЗАДАНИЕ №1</div>
+                    <h1 class="block-heading">Неверно</h1>
+                    <div class="block-text-2">Правильный ответ - Да, сумма явно верная</div>
+                    <button class="block2-button">Завершить тест</button>
+                  </div>
+                  
+                  <div class="option-3">
+                    <div class="alert alerts alert-primary grey-alert">ЗАДАНИЕ №1</div>
+                    <h1 class="block-heading">Неверно</h1>
+                    <div class="block-text-2">Правильный ответ - Да, сумма явно верная</div>
+                    <button class="block2-button">Завершить тест</button>
+                  </div>
+
+                  <div class="finish-test">
+                    <div class="alert alerts alert-primary grey-alert">ЗАДАНИЕ №1</div>
+                    <h1 class="block-heading">Неверно</h1>
+                    <div class="block-text-2">Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт</div>
+                    <button class="block2-button">Завершить тест</button>
+                  </div>
+
+                <div class="row">
+                  <div class="col-lg-7 col-md-7 col-sm-12">
+                      <div class="first-p" id="heading">Школа <span class="braces">{</span><span class="text-italic">программирования</span><span class="braces">}</span> для тех, кому нужны реальные навыки,
+                        а не просто сертификат
+                      </div>
+                      <div class="subtitle">
+                        Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+                      </div>
+                      <div>
+                        <div class="btn btn-danger rounded-pill border-0 start-test">Пройти тестирование <span class="ms-3"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 13.2929C-0.0976311 13.6834 -0.0976311 14.3166 0.292893 14.7071C0.683418 15.0976 1.31658 15.0976 1.70711 14.7071L0.292893 13.2929ZM15 0.999969C15 0.447684 14.5523 -3.1092e-05 14 -3.13449e-05L5 -3.05441e-05C4.44772 -3.08813e-05 4 0.447685 4 0.999969C4 1.55225 4.44772 1.99997 5 1.99997L13 1.99997L13 9.99997C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 9.99997L15 0.999969ZM1.70711 14.7071L14.7071 1.70708L13.2929 0.292862L0.292893 13.2929L1.70711 14.7071Z" fill="white"/></svg>
+                        </span> 
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-5 col-sm-12 typing-img">
+                    <img src="./media/images/typing_1.png" alt="" class="comp-img">
+                  </div>
+                </div>
+              </section>
+              
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <a name="learn"></a>
+        <div class="text-center wht-tech" id="headings">Какие технологии вы изучите:</div>
+          <div class="block-1 row justify-content-evenly">
+            <div class="col-6 img-2">
+              <img src="./media/images/typing_2.png" alt="">
+            </div>
+            <div class="col-lg-6 col-sm-12" id="alerts">
+                <div class="alert alerts blue-alert">
+                  Язык программирования Python
+                </div>
+                <div class="alert alerts alert-primary yellow-alert" role="alert">
+                  Сети
+                </div>
+                <div class="alert alerts alert-primary orange-alert" role="alert">
+                  Базы данных
+                </div>
+                <div class="alert alerts alert-primary green-alert" role="alert">
+                  Фреймворки Flask и Django
+                </div>
+                <div class="alert alerts alert-primary light-blue-alert" role="alert">
+                  Отладка и тестирование
+                </div>
+                <div class="alert alerts alert-primary dark-blue-alert" role="alert">
+                  Docker
+                </div>
+                <div class="alert alerts alert-primary levender-alert" role="alert">
+                  Git
+                </div>
+                <div class="smaller-text">
+                  Это необходимый минимум для современного backend-разработчика
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+          <div class="text-center center w-lg-50 w-sm-100" id="headings">Обучение в YtYt – это удобно и результативно</div>
+
+            <div class="row flex-lg-nowrap flex-sm-wrap gap-4 mb-4 justify-content-center">
+              <div class="card col-sm-6 text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Tag.png" class="img-card" alt="">
+                  <h5 class="card-title">Огромное <br>количество практики</h5>
+                  <p class="card-text">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
+                </div>
+              </div>
+  
+              <div class="card col-sm-6 text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Spiral.png" class="img-card" alt="">
+                  <h5 class="card-title">Современные методики обучения</h5>
+                  <p class="card-text">Спиральное обучение: 
+                    погружаемся в материал постепенно, виток за витком</p>
+                </div>
+              </div>
+  
+              <div class="card text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Computer screen.png" class="img-card" alt="">
+                  <h5 class="card-title">Простое и понятное изложение</h5>
+                  <p class="card-text">Вместо заумных терминов – примеры из реального мира</p>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Calendar.png" class="img-card" alt="">
+                  <h5 class="card-title">Гибкий график занятий</h5>
+                  <p class="card-text">Учитесь в любое время в удобном 
+                    для вас темпе</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-center cards-2 gap-4">
+              <div class="card text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Chat.png" class="img-card" alt="">
+                  <h5 class="card-title">Прямая связь с опытными программистами</h5>
+                  <p class="card-text">Задавайте вопросы 
+                    и отправляйте свой код на проверку</p>
+                </div>
+              </div>
+  
+              <div class="card text-center">
+                <div class="card-body p-0">
+                  <img src="./media/images/Coin.png" class="img-card" alt="">
+                  <h5 class="card-title">Оплата небольшими частями</h5>
+                  <p class="card-text">Платите только за тот материал, который сейчас изучаете, 
+                    а не за весь курс сразу</p>
+                </div>
+              </div>
+  
+              <div class="card text-center card-prolong">
+                <div class="card-body p-0">
+                  <img src="./media/images/Payment.png" class="img-card" alt="">
+                  <h5 class="card-title">Быстрый и легкий возврат</h5>
+                  <p class="card-text">Если передумаете учиться –
+                    вернем деньги за 3 рабочих дня</p>
+                </div>
+              </div>
+            </div>
+          
+      </div>
+    </div>
+
+  <div class="container-fluid img-fluid"> <a name="process"></a>
+      <div class = "text-center edu-how" id="headings">Как происходит обучение на YtYt?</div>
+      <div class="text-center w-50 ms-auto me-auto" id="sm-text">
+        Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.
+      </div>
+      
+    <div class="d-flex justify-content-center">
+      <div class="bg-computer">
+        <video src="./media/images/IT.mp4" controls loop></video>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center"><img src="./media/images/bottom.png" class="computer-bottom" alt=""></div>
+   
+
+      <div class="container">
+        <div class="block-2">
+          <div>
+                <div class="blocks b-1">
+                  <span class="number">01</span>
+                  <div class="bold-titles">Весь материал разбит <br>на небольшие уроки</div>
+                  <div class="sml-text">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</div>  
+                </div>
+  
+                <div class="blocks b-2">
+                  <span class="number">02</span>
+                  <div class="bold-titles">Обучение <br>через практику</div>
+                  <div class="sml-text">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</div>
+                </div>
+  
+                <div class="blocks b-3">
+                  <span class="number">03</span>
+                  <div class="bold-titles">Нет ограничений <br> по времени</div>
+                  <div class="sml-text">Можно совмещать учёбу с работой 
+                    и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</div>
+                </div>
+          </div>
+        </div>
+          <div class="row block-button ms-auto me-auto">
+              <div class="col-lg-6 col-sm-12 btn btn-danger rounded-pill border-0 button-2">Начать обучение  <span class="ms-2"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 13.2929C-0.0976311 13.6834 -0.0976311 14.3166 0.292893 14.7071C0.683418 15.0976 1.31658 15.0976 1.70711 14.7071L0.292893 13.2929ZM15 0.999969C15 0.447684 14.5523 -3.1092e-05 14 -3.13449e-05L5 -3.05441e-05C4.44772 -3.08813e-05 4 0.447685 4 0.999969C4 1.55225 4.44772 1.99997 5 1.99997L13 1.99997L13 9.99997C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 9.99997L15 0.999969ZM1.70711 14.7071L14.7071 1.70708L13.2929 0.292862L0.292893 13.2929L1.70711 14.7071Z" fill="white"/></svg>
+              </span>
+              </div>
+              <div class="col-lg-6 col-sm-12 pe-0 text-btn-2">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</div>
+          </div>
+      </div>
+  </div>
+ 
+
+   
+  <div class="container-fluid cont-white">
+    <div class="row gap-4 justify-content-center">
+      <div class="square-block d-flex align-items-center justify-content-center">
+        <img src="./media/images/typing_3.png" alt="" class = "typing-3" >
+      </div>
+      <div class="rectangle-block">
+        <div>
+          <div class="sm-bold-header">Помощь и поддержка</div>
+          <div class="sm-paragraph">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</div>
+          <div class="paragraph">Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно <br>изучит ваш код, найдет ошибки и поможет вам стать лучше. </div>  
+        </div>
+      </div>
+
+      <div class="rectangle-block">
+        <div>
+          <div class="sm-bold-header">Методика обучения</div>
+          <div class="paragraph">Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</div>  
+        </div>
+      </div>
+      <div class="square-block d-flex align-items-center justify-content-center">
+        <img src="./media/images/typing_4.png" alt="" class = "typing-4" >
+      </div>
+    </div>
+   </div>
+
+   <div class="container-fluid grey-bg">
+    <div class="container"> <a name="costs"></a>
+      <div class = "text-center costs-edu" id="headings">Стоимость обучения</div>
+      <div class="row">
+        <div class="col-lg-5 col-sm-12">
+          <div class="d-flex">
+            <span class="col-2 me-4 gobbler-span"><img class="gobbler-sm" src="./media/images/svg-gobbler 2.png" alt=""></span>
+            <p class="img-texts col-10" id="p-col-10">Весь курс разбит на несколько блоков. Оплата поэтапная вы платите только за тот блок, который сейчас проходите.</p>    
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-12">
+          <div class="d-flex">
+            <span class="col-lg-2 col-sm-12 me-4 coin-span"><img class="coin-sm" src="./media/images/Coin.png" alt=""></span>
+            <p class="img-texts col-lg-10 col-sm-12 pe-1">Любой из блоков вы <br>можете оплатить в рассрочку</p>    
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="d-flex">
+            <span class="col-2 me-4 cash-span"><img class="cash-sm" src="./media/images/Payment.png" alt=""></span>
+            <p class="img-texts col-10">Если передумаете учиться, то возврат можно оформить в любой момент. Возвращаем деньги за 3 рабочих дня.</p>    
+          </div>
+        </div>
+        <span class="d-lg-none d-md-none phone-sm">
+          <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="16.7143" height="27" rx="3.5" fill="#F9F8FD" stroke="#C4C4C4" stroke-width="3"/><rect x="6" y="1" width="8" height="4" rx="2" fill="#C4C4C4"/></svg>
+        </span>
+        <span class="d-lg-none d-md-none phone-sm">
+          <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM1 9H22V7H1V9Z" fill="#C4C4C4"/></svg>
+        </span>
+        <div class="bg-table">
+          <table class="table table-striped table-borderless">
+            <thead>
+              <tr class="blue-th">
+                <th scope="col">Блок</th>
+                <th scope="col">Стоимость (&#8381;)</th>
+                <th scope="col">Расчетное время обучения (мес.) *</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tr-font">
+                <td class="table-radius">Введение в программирование</td>
+                <td>Бесплатно</td>
+                <td class="table-radius-2">0.5</td>
+              </tr>
+              <tr class="tr-font">
+                <td>Основы программирования на Python</td>
+                <td>9 900</td>
+                <td>1</td>
+              </tr>
+              <tr class="tr-font">
+                <td class="table-radius">Python, продвинутый уровень</td>
+                <td>14 900</td>
+                <td class="table-radius-2">2.5</td>
+              </tr>
+              <tr class="tr-font">
+                <td>Сети + фреймворк Flask</td>
+                <td>14 900</td>
+                <td>2.5</td>
+              </tr>
+              <tr class="tr-font">
+                <td class="table-radius">Базы данных</td>
+                <td>14 900</td>
+                <td class="table-radius-2">2</td>
+              </tr>
+              <tr class="tr-font">
+                <td>Фреймворк Django</td>
+                <td>14 900</td>
+                <td>2</td>
+              </tr>
+              <tr class="tr-font">
+                <td class="table-radius">Разработка «боевого» проекта </td>
+                <td>9 900</td>
+                <td class="table-radius-2">1.5</td>
+              </tr>
+              <tr class="tr-font-bold">
+                <th>Итого</th>
+                <th>79 400</th>
+                <th>12</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note-table">* если занятиям уделяется около 20 часов в неделю</div>
+        
+        <div class="container block-w-img">
+          <div class="row">
+            <div class="col-1"><img class = "megaphone" src="./media/images/Megaphone.png" alt=""></div>
+            <div class="col-7 txt ms-lg-4">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</div>
+            <div class="col-3 btn btn-danger rounded-pill border-0 start-study">Начать обучение <span class="ms-2"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.292893 13.2929C-0.0976311 13.6834 -0.0976311 14.3166 0.292893 14.7071C0.683418 15.0976 1.31658 15.0976 1.70711 14.7071L0.292893 13.2929ZM15 0.999969C15 0.447684 14.5523 -3.1092e-05 14 -3.13449e-05L5 -3.05441e-05C4.44772 -3.08813e-05 4 0.447685 4 0.999969C4 1.55225 4.44772 1.99997 5 1.99997L13 1.99997L13 9.99997C13 10.5523 13.4477 11 14 11C14.5523 11 15 10.5523 15 9.99997L15 0.999969ZM1.70711 14.7071L14.7071 1.70708L13.2929 0.292862L0.292893 13.2929L1.70711 14.7071Z" fill="white"/></svg>
+            </span></div>
+          </div>
+        </div>
+
+        <div class="container"><a name = "our-contacts"></a>
+          <div class="ms-5 row justify-content-lg-between footer-sections">
+            <section class="justify-content-sm-center col-lg-7 col-sm-12 row w-lg-25">
+              <span class="footer-logo col-lg-3 mt-3 pe-0"><img src="./media/images/footer-logo.png" alt=""></span>
+              <span class="col-lg-8 note grey-text">Школа программирования</span>
+              <div class="d-flex gap-3 mt-0">
+                <a class = "social-media" href="https://www.instagram.com/"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_38_3293)"><path d="M34.8884 17.4371C34.8884 27.0673 27.0814 34.8741 17.4512 34.8741C7.82101 34.8741 0.0141602 27.0673 0.0141602 17.4371C0.0141602 7.80683 7.82101 0 17.4512 0C27.0814 0 34.8884 7.80683 34.8884 17.4371Z" fill="#22253B"/><path d="M21.4009 8.68652H13.2122C10.5471 8.68652 8.37891 10.8547 8.37891 13.5198V21.7086C8.37891 24.3736 10.5471 26.5418 13.2122 26.5418H21.4011C24.0659 26.5418 26.2341 24.3736 26.2341 21.7086V13.5198C26.2341 10.8547 24.0659 8.68652 21.4009 8.68652ZM17.3065 22.4963C14.6145 22.4963 12.4244 20.3062 12.4244 17.6141C12.4244 14.9221 14.6145 12.732 17.3065 12.732C19.9986 12.732 22.1888 14.9221 22.1888 17.6141C22.1888 20.3062 19.9986 22.4963 17.3065 22.4963ZM22.3054 13.8834C21.5099 13.8834 20.8628 13.2363 20.8628 12.4407C20.8628 11.6452 21.5099 10.998 22.3054 10.998C23.101 10.998 23.7481 11.6452 23.7481 12.4407C23.7481 13.2363 23.101 13.8834 22.3054 13.8834Z" fill="white"/><path d="M17.3066 13.7788C15.1918 13.7788 13.4712 15.4993 13.4712 17.6142C13.4712 19.7289 15.1918 21.4496 17.3066 21.4496C19.4215 21.4496 21.1419 19.7289 21.1419 17.6142C21.1419 15.4993 19.4215 13.7788 17.3066 13.7788Z" fill="white"/><path d="M22.3055 12.0449C22.0873 12.0449 21.9097 12.2226 21.9097 12.4408C21.9097 12.659 22.0873 12.8367 22.3055 12.8367C22.5238 12.8367 22.7016 12.6592 22.7016 12.4408C22.7016 12.2224 22.5238 12.0449 22.3055 12.0449Z" fill="white"/></g><defs><clipPath id="clip0_38_3293"><rect width="35" height="35" fill="white"/></clipPath></defs></svg></a>
+                <a class = "social-media" href="https://vk.com/"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_38_3294)"><path d="M34.8741 17.4371C34.8741 27.0673 27.0673 34.8741 17.4371 34.8741C7.80683 34.8741 0 27.0673 0 17.4371C0 7.80683 7.80683 0 17.4371 0C27.0673 0 34.8741 7.80683 34.8741 17.4371Z" fill="#22253B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.8496 22.9579H17.9649C17.9649 22.9579 18.3018 22.9211 18.4738 22.736C18.6322 22.5663 18.6271 22.2475 18.6271 22.2475C18.6271 22.2475 18.6053 20.7549 19.2999 20.5351C19.9846 20.3186 20.8639 21.9777 21.7959 22.6156C22.5005 23.0983 23.036 22.9925 23.036 22.9925L25.528 22.9579C25.528 22.9579 26.8314 22.8779 26.2133 21.8556C26.1628 21.7719 25.8535 21.0995 24.3607 19.7175C22.7982 18.2712 23.0074 18.5051 24.8896 16.0032C26.0359 14.4795 26.4941 13.5493 26.3509 13.1509C26.2143 12.7714 25.3713 12.8717 25.3713 12.8717L22.5657 12.8891C22.5657 12.8891 22.3577 12.8609 22.2034 12.9528C22.0527 13.043 21.9556 13.2532 21.9556 13.2532C21.9556 13.2532 21.5116 14.4323 20.9193 15.435C19.67 17.5509 19.1705 17.6626 18.9663 17.5312C18.4913 17.225 18.6099 16.3011 18.6099 15.6447C18.6099 13.5943 18.9217 12.7393 18.0027 12.518C17.6977 12.4445 17.4733 12.396 16.6933 12.3882C15.6922 12.3778 14.8448 12.3912 14.365 12.6256C14.0459 12.7815 13.7997 13.1289 13.9496 13.1489C14.1351 13.1736 14.555 13.2618 14.7777 13.5642C15.0652 13.9543 15.0551 14.8305 15.0551 14.8305C15.0551 14.8305 15.2203 17.2442 14.6693 17.5441C14.2911 17.7497 13.7723 17.3298 12.6585 15.4103C12.0878 14.427 11.6569 13.3401 11.6569 13.3401C11.6569 13.3401 11.5738 13.137 11.4256 13.0284C11.2457 12.8967 10.9944 12.8548 10.9944 12.8548L8.32829 12.8722C8.32829 12.8722 7.92805 12.8833 7.78113 13.0569C7.65042 13.2113 7.77075 13.5306 7.77075 13.5306C7.77075 13.5306 9.85805 18.401 12.2215 20.8555C14.3886 23.1058 16.8496 22.9579 16.8496 22.9579Z" fill="white"/></g><defs><clipPath id="clip0_38_3294"><rect width="35" height="35" fill="white"/></clipPath></defs></svg></a>
+                <a class = "social-media" href="https://www.facebook.com/Meta/"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_38_3295)"><path d="M34.8884 17.4371C34.8884 27.0673 27.0814 34.8741 17.4512 34.8741C7.82101 34.8741 0.0141602 27.0673 0.0141602 17.4371C0.0141602 7.80683 7.82101 0 17.4512 0C27.0814 0 34.8884 7.80683 34.8884 17.4371Z" fill="#22253B"/><path d="M19.2198 12.913H21.2457V9.97314H18.8641V9.98375C15.9784 10.0842 15.3869 11.6776 15.3348 13.3512H15.3288V14.8192H13.3638V17.6982H15.3288V25.4156H18.2903V17.6982H20.7163L21.1848 14.8192H18.2912V13.9322C18.2912 13.3667 18.6744 12.913 19.2198 12.913Z" fill="white"/></g><defs><clipPath id="clip0_38_3295"><rect width="35" height="35" fill="white"/></clipPath></defs></svg></a>
+                <a class = "social-media" href="https://www.youtube.com/?hl=RU"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_38_3296)"><path d="M34.94 17.4632C34.94 27.1078 27.1214 34.9262 17.4768 34.9262C7.8322 34.9262 0.0136719 27.1078 0.0136719 17.4632C0.0136719 7.81852 7.8322 0 17.4768 0C27.1214 0 34.94 7.81852 34.94 17.4632Z" fill="#22253B"/><path d="M26.473 11.6698C25.7635 10.8264 24.4537 10.4824 21.9521 10.4824H12.8716C10.3129 10.4824 8.98083 10.8486 8.27405 11.7465C7.58496 12.6219 7.58496 13.9118 7.58496 15.697V19.0996C7.58496 22.5583 8.40256 24.3142 12.8716 24.3142H21.9521C24.1215 24.3142 25.3235 24.0107 26.1013 23.2664C26.8987 22.5031 27.2391 21.2569 27.2391 19.0996V15.697C27.2391 13.8144 27.1857 12.5169 26.473 11.6698ZM20.2029 17.8681L16.0795 20.0231C15.9873 20.0713 15.8865 20.0952 15.7858 20.0952C15.6718 20.0952 15.5581 20.0646 15.4573 20.0035C15.2677 19.8886 15.1518 19.683 15.1518 19.4612V15.165C15.1518 14.9436 15.2673 14.7382 15.4567 14.6232C15.646 14.5081 15.8816 14.5003 16.078 14.6024L20.2015 16.7435C20.4113 16.8524 20.543 17.069 20.5434 17.3053C20.5436 17.5418 20.4125 17.7587 20.2029 17.8681Z" fill="white"/></g><defs><clipPath id="clip0_38_3296"><rect width="35" height="35" fill="white"/></clipPath></defs></svg></a>
+              </div>
+            </section>
+      
+        <section class="d-lg-flex d-md-flex d-sm-block col-lg-5">
+          <div class="col-lg-6 col-sm-12">
+             <p class="footer-text"><a href="#learn" class="text-reset">Чему вы научитесь</a></p>
+              <p class="footer-text"><a href="#process" class="text-reset">Процесс обучения</a></p>
+              <p class="footer-text"><a href="#costs" class="text-reset">Стоимость</a></p>
+              <p class="footer-text"><a href="#our-contacts" class="text-reset">Контакты</a></p>
+              <p class="footer-text"><a href="" class="text-reset">Регистрация</a></p>
+           </div>
+           <div class="col-lg-6 col-sm-12">
+             <p class="color-blue">+7 (499) 348 93 96</p>
+             <p class="mail">info@ytyt.ru</p>
+             <p class="footer-text address grey-text">ИП Умаров Т. A.</p>
+             <p class="footer-text address grey-text">ИНН 745216229809</p>
+             <p class="footer-text address grey-text">ОГРНИП 315745200001358</p>  
+            </div>
+        </section>
+      
+          </div>
+        </div>
+        <hr>
+        <div class="row mb-4 mt-2">
+          <div class="col-6 grey-text d-inline-block">© 2022 ytyt — Все права защищены</div>
+          <div class="grey-text col-3 d-inline-block">Пользовательское соглашение</div>
+          <div class="grey-text col-3 d-inline-block">Политика конфиденциальности</div>  
+        </div>
+      </div>
+    </div>
+   </div>
+   
+   
+   <script src="js/app.js"></script>
+  </body>
+</html>
